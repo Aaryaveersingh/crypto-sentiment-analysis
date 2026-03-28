@@ -98,3 +98,23 @@ pip install pandas matplotlib seaborn scikit-learn
 ```bash
 - Execute cells from top to bottom
 ```
+
+## Summary
+
+This project analyzes how market sentiment (Fear vs Greed) influences trader behavior and performance on Hyperliquid.
+
+### Methodology
+The analysis involved cleaning and merging sentiment and trading datasets, followed by feature engineering including PnL, win rate, trade frequency, and position size. Traders were analyzed across sentiment conditions and segmented based on behavior and performance.
+
+### Key Insights
+- Total PnL is higher during Greed ($4.87M vs $4.10M), but win rate is higher during Fear (84.4% vs 82.5%)
+- Traders are 2.7x more active during Fear, indicating volatility-driven trading behavior
+- Extreme Greed shows highest efficiency (89.2% win rate and highest average PnL)
+- Losing traders incur large losses (~-$450K) during Greed due to aggressive buying
+
+### Strategy Recommendations
+- Avoid aggressive buying during Greed phases
+- Use Fear periods for controlled, high-frequency trading
+- Participate in Extreme Greed with strict risk management
+
+Overall, the analysis highlights that trader performance is highly sentiment-dependent and requires adaptive risk strategies.
